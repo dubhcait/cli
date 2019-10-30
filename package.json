@@ -1,0 +1,27 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "a cli to extend hub cli",
+  "main": "index.js",
+  "bin": {
+    "cli": "bin/cli"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubhcait/cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dubhcait/cli/issues"
+  },
+  "homepage": "https://github.com/dubhcait/cli#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "concat-stream": "^2.0.0",
+    "mocha": "^6.2.2"
+  }
+}
