@@ -1,10 +1,10 @@
 {
-  "name": "cli",
+  "name": "hub-ext",
   "version": "1.0.0",
   "description": "a cli to extend hub cli",
   "main": "index.js",
   "bin": {
-    "cli": "bin/cli"
+    "hub-ext": "bin/hub-ext"
   },
   "scripts": {
     "test": "mocha"
