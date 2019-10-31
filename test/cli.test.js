@@ -14,3 +14,19 @@ describe('The test CLI', () => {
     );
   });
 });
+
+describe('The test CLI', () => {
+  it('should print the correct output', async () => {
+    const response = await cmd.execute(
+      './bin/cli',
+      ['--v']
+    ); 
+    expect(response).to.equal(
+      'This is version 1.0.0 of this cli.\n'
+     
+    );
+  });
+});
+
+
+
