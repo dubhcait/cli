@@ -3,13 +3,16 @@ module.exports = () => {
     const [, , ...args] = process.argv
 
     switch (args[0]) {
-        case '--v' || '--version':
+        case '--v':
+        case '--version':
             require('./cmd/version')(args);
             break;
-        case '--h' || '--help':
+        case '--h':
+        case '--help':
             require('./cmd/help')(args);
             break;
-            case '--i' || '--issue':
+        case '--i':
+        case '--issue':
             require('./cmd/issues')(args[1]);
             break;
         default:

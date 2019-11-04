@@ -12,13 +12,29 @@ describe('The test hub-ext CLI', () => {
     expect(response.trim().split(EOL)).to.include.members(
  [ 'hub-ext --[command] <options>',
   '      version, v ............ show package version',
-  '      help, h ............... show help menu for a command'
+  '      help, h ............... show help menu for a command',
+  '      issue, i ... generates issues from relvant csv with appropriate template'
  ]);
   });
 });
 
 describe('The test hub-ext CLI', () => {
-  it('should print the correct output', async () => {
+  it('--h issue should print the correct output', async () => {
+    const response = await cmd.execute(
+      './bin/hub-ext',
+      ['--h','issue']
+    ); 
+    expect(response.trim().split(EOL)).to.include.members(
+ [ 'hub-ext --issue <options>',
+  '   epics.........generates issues from epics.csv with epic template',
+  '   features......generates issues from features.csv with feature template',
+  '   bugs..........generates issues from bugs.csv with bug template'
+ ]);
+  });
+});
+
+describe('The test hub-ext CLI', () => {
+  it('--v should print the correct output', async () => {
     const response = await cmd.execute(
       './bin/hub-ext',
       ['--v']
@@ -31,14 +47,14 @@ describe('The test hub-ext CLI', () => {
 });
 
 
-// describe('The test CLI', () => {
-//   it('should print the correct error', async () => {
-//     try {
-//       await cmd.execute('./bin/cli', ['--sausage']);
-//     } catch(err) {
-//       expect(err.trim()).to.equal(
-//         '  Invalid option --sausage'
-//       );
-//     }
-//   });
-// });
+describe('The test CLI', () => {
+  it('should print the correct error', async () => {
+    try {
+      await cmd.execute('./bin/hub-ext', ['--sausage']);
+    } catch(err) {
+      expect(err.trim()).to.equal(
+        '"--sausage" is not a valid flag for hub-ext.'
+      );
+    }
+  });
+});
