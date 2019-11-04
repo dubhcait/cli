@@ -9,6 +9,9 @@ module.exports = () => {
         case '--h' || '--help':
             require('./cmd/help')(args);
             break;
+            case '--i' || '--issue':
+            require('./cmd/issues')(args[1]);
+            break;
         default:
             console.error(`"${args}" is not a valid flag for hub-ext.`);
             break;

@@ -1,0 +1,2 @@
+title,description,priority,reproduce,should be,current,image,logs,context,desktop,mobile,other,labels
+bug title,bug desc,2,this and that ,better,less,![](https://i.imgur.com/RaSCcPp.png),more,some,![](https://i.imgur.com/RaSCcPp.png),![](https://i.imgur.com/RaSCcPp.png),test,wontfix
