@@ -1,19 +1,17 @@
 # Cli to automate my workflow 
 
-I really enjoy being a scrum master in a tead of developers but like with all things there is always an aspect that is the bad part. This is where the making of github issues comes in. They are so great when done well but the process of doing that for me is painful. 
+I really enjoy being a scrum master in a team of developers but like with all things there is always an aspect that is the bad part. This is where the making of github issues comes in. They are so great when done well but the process of doing that for me is painful. 
 
 The initial idea was, for a CLI to wrap hub cli, so multiple issues can be made from a csv. 
 
 However, I decided to make this more independent and to also include a selection of git hub templates 
 The templates I want to use are at the end. 
 
+Templates: 
 
----
-Templates 
-
-Epic
-New feature
-Bug 
+Epic,
+New feature,
+Bug, 
 PR
 
 ---
@@ -36,8 +34,9 @@ Which is unfortunated, So this project has no CI or automatic code coverage.
 
 ## Going forward
 
-Write some better error handling
-I'm going to use this a good bit modify it and then make it more accessible for others to use. 
+- Write some better error handling
+- I'm going to use it and make it better 
+- make it more accessible for others to use. 
 
 # Templates
 
@@ -97,9 +96,8 @@ Describe whether this request is related to an existing workflow, feature, or ot
 
 ### Who asked for this?
 Add more on who asked for this, ie. company, person, how much they pay us, what their tier is, are they a strategic account, etc.
+
 ---
-
-
 ## Bugs Template
 
 ### Describe the bug
